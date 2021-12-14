@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- <link rel="stylesheet" href="../style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="fas fa-user"></i>Registration</a>
+      <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../index.html">About US</a>
+        <a href="../index.html">contact Us</a>
+        <a href="./index.html"><button class="btn-1">SignUp</button></a>
+        <!-- <a href=""><button class="btn-1">login</button></a> -->
+      </nav>
+    </header>
+    <main>
+      <div class="main-wrapper" style="height: 730px">
+        <div class="side-img">
+          <img style="width: 400px" src="./img2.svg" />
+        </div>
+        <div class="form-container">
+          <div class="form-container-wrapper">
+            <form
+              action="/login"
+              name="signup"
+              id="form"
+              method="post"
+              onsubmit="return formValidation()"
+            >
+              <h1>Login</h1>
+
+              <span>
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  required
+                />
+              </span>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  name="fpassword"
+                  placeholder="New Password"
+                  required
+                />
+              </span>
+
+              <button type="submit" value="Submit" id="submit-form">
+                submit
+              </button>
+              <br />
+
+              <div class="login-with">
+                <div class="line-parent">
+                  <div class="line"></div>
+                  <div style="font-size: 13px">or</div>
+                  <div class="line"></div>
+                </div>
+                <div class="login-with-google">
+                  <a href="#">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Sign in with Google</span>
+                  </a>
+                </div>
+                <div class="already">
+                  Don't have an account?
+                  <b> <a href="./index.html">Register</a> </b>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-box">
+        <div class="add">
+          <div data-aos="fade-up" data-aos-duration="800">
+            <h3 class="heading-footer">Registration</h3>
+            <p>Room No. 2,</p>
+            <p>company Name,</p>
+            <p>address</p>
+            <p>city, country - pin</p>
+            <h4>Way to Reach Us</h4>
+          </div>
+        </div>
+        <div data-aos="fade-down" data-aos-duration="800">
+          <div class="Policie">
+            <h4>Policies</h4>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Payment Refund Policy</p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="800">
+          <div class="Contact">
+            <h4>Contact Us</h4>
+          </div>
+        </div>
+        <div data-aos="fade-down" data-aos-duration="800">
+          <div class="Social">
+            <h4>Write to us at:</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
